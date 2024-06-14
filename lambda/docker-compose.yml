@@ -1,0 +1,9 @@
+# To test Lambda locally
+version: "3.9"
+services:
+  langserve-lambda:
+    image: langserve-lambda
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
